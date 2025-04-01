@@ -1,10 +1,10 @@
 #include <stdio.h>
-void main(int argc, char **argv) {
-	if (!--argc) return;
+int main(int argc, char **argv) {
+	if (!--argc) return 0;
 	++argv;
 	while (*argv) {
 		fputs(*argv, stdout);
 		if (*++argv) putchar(' ');
 	}
-	return;
+	return 0;
 }
